@@ -1,7 +1,7 @@
--- [[ VIVAS CUNTY ASS HUB V1 - BETA ]] --
--- FIXED: Whitelist Scroll (Properly parented to ScrollingFrame with Auto-Canvas size)
--- FIXED: FPS Unlocker (Traced Logic)
--- FIXED: Signal Logic (RED = Off, YELLOW = Idle, GREEN = Active)
+-- [[ VIVAS HUB PLS DONT STEAL OR ELSE IM GETTING U OMS NIGGERBITCH ]] --
+-- FIXED: fINNAGOG Scroll (Properly parented to ScrollingFrame with Auto-Canvas size)
+-- FIXED: FPS Unlocker To my Chasity (Traced Logic)
+-- FIXED: Made some signal Logic (RED = Off, YELLOW = Idle, GREEN = Active)
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -25,7 +25,7 @@ local UICorner = Instance.new("UICorner", MainFrame)
 local UIStroke = Instance.new("UIStroke", MainFrame)
 
 MainFrame.Name = "VivasMain"
-MainFrame.Size = UDim2.new(0, 500, 0, 420)
+MainFrame.Size = UDim2.new(0, 500, 0, 360)
 MainFrame.Position = UDim2.new(0.5, -250, 0.5, -210)
 MainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 MainFrame.Active = true
@@ -41,9 +41,9 @@ adLabel.Size = UDim2.new(1, 0, 1, 0)
 adLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 adLabel.BackgroundTransparency = 0.1
 adLabel.Text = "viva"
-adLabel.TextColor3 = Color3.fromRGB(255, 105, 180)
+adLabel.TextColor3 = Color3.fromRGB(70, 65, 255)
 adLabel.Font = Enum.Font.GothamBold
-adLabel.TextSize = 65
+adLabel.TextSize = 55
 adLabel.ZIndex = 100
 
 task.delay(2.5, function()
@@ -89,12 +89,12 @@ local MagnetSettings = {
 }
 
 local FogPresets = {
-    ["Neon Red"] = {Color = Color3.fromRGB(255, 70, 70), Density = 0.45},    
-    ["Deep Pink"] = {Color = Color3.fromRGB(255, 20, 147), Density = 0.48},  
-    ["Electric Blue"] = {Color = Color3.fromRGB(0, 255, 255), Density = 0.51}, 
-    ["Toxic Green"] = {Color = Color3.fromRGB(50, 255, 50), Density = 0.49},  
-    ["Void Purple"] = {Color = Color3.fromRGB(138, 43, 226), Density = 0.56}, 
-    ["Hell Orange"] = {Color = Color3.fromRGB(255, 140, 0), Density = 0.43}   
+    ["neon redish"] = {Color = Color3.fromRGB(255, 70, 70), Density = 0.45},    
+    ["pretty pink pussy"] = {Color = Color3.fromRGB(255, 20, 147), Density = 0.48},  
+    ["electric blue"] = {Color = Color3.fromRGB(0, 255, 255), Density = 0.51}, 
+    ["fart colored gas"] = {Color = Color3.fromRGB(50, 255, 50), Density = 0.49},  
+    ["a purple shade idfk"] = {Color = Color3.fromRGB(138, 43, 226), Density = 0.56}, 
+    ["BLACK VOID"] = {Color = Color3.fromRGB(0, 0, 0), Density = 0.48}   
 }
 
 local OrigFogStart, OrigFogEnd, OrigFogColor = Lighting.FogStart, Lighting.FogEnd, Lighting.FogColor
@@ -167,8 +167,8 @@ Instance.new("UICorner", Sidebar).CornerRadius = UDim.new(0, 10)
 
 local Title = Instance.new("TextLabel", Sidebar)
 Title.Size = UDim2.new(1, 0, 0, 40)
-Title.Text = "/PLAYGIRLS"
-Title.TextColor3 = Color3.fromRGB(255, 20, 147)
+Title.Text = "FINNAGOGPREPPY"
+Title.TextColor3 = Color3.fromRGB(43, 52, 251)
 Title.Font = Enum.Font.GothamBold
 Title.TextSize = 18
 Title.BackgroundTransparency = 1
@@ -176,10 +176,10 @@ Title.BackgroundTransparency = 1
 local SubTitle = Instance.new("TextLabel", Sidebar)
 SubTitle.Size = UDim2.new(1, 0, 0, 20)
 SubTitle.Position = UDim2.new(0, 0, 0, 35)
-SubTitle.Text = "MOMMYMODEV1"
-SubTitle.TextColor3 = Color3.fromRGB(255, 105, 180)
+SubTitle.Text = "ONLYFANS"
+SubTitle.TextColor3 = Color3.fromRGB(118, 169, 255)
 SubTitle.Font = Enum.Font.GothamBold
-SubTitle.TextSize = 10
+SubTitle.TextSize = 9.5
 SubTitle.BackgroundTransparency = 1
 
 -- [[ SCROLLABLE SIDEBAR BUTTONS ]] --
@@ -200,8 +200,8 @@ end)
 local Credits = Instance.new("TextLabel", Sidebar)
 Credits.Size = UDim2.new(1, -10, 0, 40)
 Credits.Position = UDim2.new(0, 5, 1, -45)
-Credits.Text = "made by hitmycel\nand t5inted /playgirls <3"
-Credits.TextColor3 = Color3.fromRGB(255, 105, 180)
+Credits.Text = "made by vivalajuiccy\nany random nigger caught using this will die."
+Credits.TextColor3 = Color3.fromRGB(53, 128, 255)
 Credits.Font = Enum.Font.GothamMedium
 Credits.TextSize = 9
 Credits.BackgroundTransparency = 1
