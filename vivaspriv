@@ -19,9 +19,11 @@ getgenv().FOVRadius = 100
 local Whitelist = {}
 
 -- [[ UI SETUP ]] --
+-- [[ UI SETUP ]] --
 local MainGui = Instance.new("ScreenGui", game.CoreGui)
+MainGui.IgnoreGuiInset = true
+
 local MainFrame = Instance.new("Frame", MainGui)
-local UICorner = Instance.new("UICorner", MainFrame)
 local UIStroke = Instance.new("UIStroke", MainFrame)
 
 MainFrame.Name = "VivasMain"
@@ -40,10 +42,10 @@ local adLabel = Instance.new("TextLabel", sgAd)
 adLabel.Size = UDim2.new(1, 0, 1, 0)
 adLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 adLabel.BackgroundTransparency = 0.1
-adLabel.Text = "viva"
+adLabel.Text = "FINNA GOG POPER BOBEI NIGGER CHINK FAGGOT SAUCE"
 adLabel.TextColor3 = Color3.fromRGB(70, 65, 255)
 adLabel.Font = Enum.Font.GothamBold
-adLabel.TextSize = 55
+adLabel.TextSize = 44
 adLabel.ZIndex = 100
 
 task.delay(2.5, function()
@@ -157,8 +159,8 @@ FOVCircle.Transparency = 1
 FOVCircle.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 10)
-UIStroke.Color = Color3.fromRGB(255, 20, 147)
-UIStroke.Thickness = 2
+UIStroke.Color = Color3.fromRGB(154, 197, 255)
+UIStroke.Thickness = 1
 
 local Sidebar = Instance.new("Frame", MainFrame)
 Sidebar.Size = UDim2.new(0, 120, 1, 0)
@@ -170,7 +172,7 @@ Title.Size = UDim2.new(1, 0, 0, 40)
 Title.Text = "FINNAGOGPREPPY"
 Title.TextColor3 = Color3.fromRGB(43, 52, 251)
 Title.Font = Enum.Font.GothamBold
-Title.TextSize = 18
+Title.TextSize = 10
 Title.BackgroundTransparency = 1
 
 local SubTitle = Instance.new("TextLabel", Sidebar)
