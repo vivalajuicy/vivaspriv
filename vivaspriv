@@ -22,7 +22,7 @@ local UICorner = Instance.new("UICorner", MainFrame)
 local UIStroke = Instance.new("UIStroke", MainFrame)
 
 MainFrame.Name = "VivasMain"
-MainFrame.Size = UDim2.new(0, 500, 0, 360)
+MainFrame.Size = UDim2.new(0, 450, 0, 360)
 MainFrame.Position = UDim2.new(0.5, -250, 0.5, -210)
 MainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 MainFrame.Active = true
@@ -36,7 +36,7 @@ sgAd.ResetOnSpawn = false
 local adLabel = Instance.new("TextLabel", sgAd)
 adLabel.Size = UDim2.new(1, 0, 1, 0)
 adLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-adLabel.BackgroundTransparency = 0.1
+adLabel.BackgroundTransparency = 1
 adLabel.Text = "finna gog poper sauce"
 adLabel.TextColor3 = Color3.fromRGB(238, 238, 255)
 adLabel.Font = Enum.Font.GothamBold
@@ -155,7 +155,7 @@ FOVCircle.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 10)
 UIStroke.Color = Color3.fromRGB(11, 12, 14)
-UIStroke.Thickness = 1
+UIStroke.Thickness = 0.1
 
 local Sidebar = Instance.new("Frame", MainFrame)
 Sidebar.Size = UDim2.new(0, 120, 1, 0)
@@ -164,10 +164,10 @@ Instance.new("UICorner", Sidebar).CornerRadius = UDim.new(0, 10)
 
 local Title = Instance.new("TextLabel", Sidebar)
 Title.Size = UDim2.new(1, 0, 0, 40)
-Title.Text = "🅥🅐🅛🅞🅡🅘🅔'🅢 🅗🅤🅑"
+Title.Text = "priv fg script"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.Font = Enum.Font.GothamBold
-Title.TextSize = 13
+Title.TextSize = 9
 Title.BackgroundTransparency = 1
 
 local SubTitle = Instance.new("TextLabel", Sidebar)
@@ -196,11 +196,11 @@ end)
 
 local Credits = Instance.new("TextLabel", Sidebar)
 Credits.Size = UDim2.new(1, -10, 0, 40)
-Credits.Position = UDim2.new(0, 5, 1, -45)
-Credits.Text = "made by viva aka valorie\nany random nigger caught using this will die."
+Credits.Position = UDim2.new(0, 5, 1.5, -45)
+Credits.Text = "made by viva aka valorie\nany random nigger caught using this will die x"
 Credits.TextColor3 = Color3.fromRGB(126, 195, 255)
 Credits.Font = Enum.Font.GothamMedium
-Credits.TextSize = 9
+Credits.TextSize = 8
 Credits.BackgroundTransparency = 1
 Credits.TextWrapped = true
 
