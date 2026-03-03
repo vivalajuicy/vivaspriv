@@ -99,10 +99,10 @@ local OrigAtmosphere = Lighting:FindFirstChildOfClass("Atmosphere") and Lighting
 
 local TriggerSettings = {
     MasterEnabled = false,
-    TriggerKey = Enum.Keycode.T,
+    TriggerKey = Enum.KeyCode.T,
     Mode = "Hold",
     Active = false,
-    ClickDelay = 0.01,
+    ClickDelay = 0.03,
     Blacklist = {"Knife", "Wallet", "Phone", "Chicken", "Pizza", "Flashlight", "Medkit", "Blade", "Bat", "Punch", "Combat"}
 }
 
