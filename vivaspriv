@@ -99,7 +99,7 @@ local OrigAtmosphere = Lighting:FindFirstChildOfClass("Atmosphere") and Lighting
 
 local TriggerSettings = {
     MasterEnabled = false,
-    TriggerKey = Enum.UserInputType.MouseButton4,
+    TriggerKey = Enum.KeyCode.T,
     Mode = "Hold",
     Active = false,
     ClickDelay = 0.03,
