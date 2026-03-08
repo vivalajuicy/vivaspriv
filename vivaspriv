@@ -46,7 +46,7 @@ adLabel.ZIndex = 100
 task.delay(2.5, function()
     for i = 0, 1, 0.1 do
         adLabel.TextTransparency = i
-        adLabel.BackgroundTransparency = i + 0.1
+        adLabel.BackgroundTransparency = i + 1
         task.wait(0.1)
     end
     sgAd:Destroy()
@@ -103,7 +103,7 @@ local TriggerSettings = {
     Mode = "Hold",
     Active = false,
     ClickDelay = 0.03,
-    Blacklist = {"Knife", "Wallet", "Phone", "Chicken", "Pizza", "Flashlight", "Medkit", "Blade", "Bat", "Punch", "Combat"}
+    Blacklist = {"Knife", "Wallet", "Phone", "Chicken", "Pizza", "Flashlight", "Medkit", "Blade", "Bat", "Punch", "Combat", "Hotdog", "Medium Armor", "Hamburger"}
 }
 
 local FlameConfig = {
@@ -142,7 +142,10 @@ local locations = {
     ["armour"] = CFrame.new(-607, 7, -788),
     ["sg"] = CFrame.new(-582, 7, -733),
     ["tac"] = CFrame.new(485, 48, -615),
-    ["mil"] = CFrame.new(35, 25, -840)
+    ["mil"] = CFrame.new(35, 25, -840),
+    ["flame"] = CFrame.new(-157, 50, -105),
+    ["rifle"] = CFrame.new(-259, 49, -213),
+    ["high med armor"] = CFrame.new(-257, 21, -82)
 }
 
 --// Silent Aim FOV Drawing
@@ -164,7 +167,7 @@ Instance.new("UICorner", Sidebar).CornerRadius = UDim.new(0, 10)
 
 local Title = Instance.new("TextLabel", Sidebar)
 Title.Size = UDim2.new(1, 0, 0, 40)
-Title.Text = "🅥🅐🅛🅞🅡🅘🅔'🅢 🅗🅤🅑"
+Title.Text = "i like money"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.Font = Enum.Font.GothamBold
 Title.TextSize = 13
@@ -197,7 +200,7 @@ end)
 local Credits = Instance.new("TextLabel", Sidebar)
 Credits.Size = UDim2.new(1, -10, 0, 40)
 Credits.Position = UDim2.new(0, 5, 1, -45)
-Credits.Text = "made by viva aka valorie\nany random nigger caught using this will die."
+Credits.Text = "made by viva aka valorie\nyes im using t5inteds gui idgaf"
 Credits.TextColor3 = Color3.fromRGB(126, 195, 255)
 Credits.Font = Enum.Font.GothamMedium
 Credits.TextSize = 9
@@ -458,7 +461,7 @@ local function ApplyHeadless()
     end
 end
 
--- [[ WHITELIST SYSTEM (FIXED SCROLL) ]] --
+-- [[ WHITELIST SYSTEM ]] --
 local function UpdateWhitelistUI()
     WhitelistPage:ClearAllChildren()
     local Layout = Instance.new("UIListLayout", WhitelistPage)
