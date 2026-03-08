@@ -167,7 +167,7 @@ Instance.new("UICorner", Sidebar).CornerRadius = UDim.new(0, 10)
 
 local Title = Instance.new("TextLabel", Sidebar)
 Title.Size = UDim2.new(1, 0, 0, 40)
-Title.Text = "i like money"
+Title.Text = "WHore V1"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.Font = Enum.Font.GothamBold
 Title.TextSize = 13
@@ -200,7 +200,7 @@ end)
 local Credits = Instance.new("TextLabel", Sidebar)
 Credits.Size = UDim2.new(1, -10, 0, 40)
 Credits.Position = UDim2.new(0, 5, 1, -45)
-Credits.Text = "made by viva aka valorie\nyes im using t5inteds gui idgaf"
+Credits.Text = "made by @bodygljtter\nfg only script btw"
 Credits.TextColor3 = Color3.fromRGB(126, 195, 255)
 Credits.Font = Enum.Font.GothamMedium
 Credits.TextSize = 9
