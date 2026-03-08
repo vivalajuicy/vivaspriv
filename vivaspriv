@@ -232,16 +232,16 @@ local function CreatePage(name)
     return Page
 end
 
-local CombatPage = CreatePage("Combat")
-local SilentPage = CreatePage("Silent")
-local WhitelistPage = CreatePage("Whitelist")
-local VisualPage = CreatePage("Visuals")
+local CombatPage = CreatePage("combat")
+local SilentPage = CreatePage("slient aim")
+local WhitelistPage = CreatePage("whitelist")
+local VisualPage = CreatePage("fog changer")
 local ESPPage = CreatePage("ESP")
-local TeleportPage = CreatePage("Teleport")
-local SpeedPage = CreatePage("Speed")
-local FPSPage = CreatePage("FPS")
-local AvatarPage = CreatePage("Avatar")
-local SettingsPage = CreatePage("Settings")
+local TeleportPage = CreatePage("tp")
+local SpeedPage = CreatePage("speed")
+local FPSPage = CreatePage("fps unlockr")
+local AvatarPage = CreatePage("client side lims")
+local SettingsPage = CreatePage("menu")
 
 local function ShowPage(name)
     for _, p in pairs(Pages) do p.Visible = false end
@@ -260,17 +260,17 @@ local function CreateTabBtn(name)
     btn.MouseButton1Click:Connect(function() ShowPage(name) end)
 end
 
-CreateTabBtn("Combat")
-CreateTabBtn("Silent")
-CreateTabBtn("Whitelist")
-CreateTabBtn("Visuals")
+CreateTabBtn("combat")
+CreateTabBtn("slient aim")
+CreateTabBtn("whitelist")
+CreateTabBtn("fog changer")
 CreateTabBtn("ESP")
-CreateTabBtn("Teleport")
-CreateTabBtn("Speed") 
-CreateTabBtn("FPS")
-CreateTabBtn("Avatar")
-CreateTabBtn("Settings")
-ShowPage("Combat")
+CreateTabBtn("tp")
+CreateTabBtn("speed") 
+CreateTabBtn("fps unlockr")
+CreateTabBtn("client side lims")
+CreateTabBtn("menu")
+ShowPage("combat")
 
 -- [[ COMPONENTS ]] --
 local function CreateHeader(parent, text)
@@ -306,7 +306,7 @@ local function CreateToggle(parent, text, bindType, default, callback, hasColor,
     local status = Instance.new("Frame", frame)
     status.Size = UDim2.new(0, 6, 0.6, 0)
     status.Position = UDim2.new(0, 2, 0.2, 0)
-    status.BackgroundColor3 = default and Color3.fromRGB(255, 255, 0) or Color3.fromRGB(255, 0, 0)
+    status.BackgroundColor3 = default and Color3.fromRGB(255, 266, 0) or Color3.fromRGB(255, 0, 0)
     Instance.new("UICorner", status)
     
     if text == "Triggerbot" then statusBars.Trigger = status
@@ -320,7 +320,7 @@ local function CreateToggle(parent, text, bindType, default, callback, hasColor,
     btn.Position = UDim2.new(0, 12, 0, 0)
     btn.Text = text .. (default and ": ON" or ": OFF")
     btn.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-    btn.TextColor3 = default and Color3.fromRGB(255, 20, 147) or Color3.new(1,1,1)
+    btn.TextColor3 = default and Color3.fromRGB(167, 194, 255) or Color3.new(1,1,1)
     btn.Font = Enum.Font.Gotham
     btn.TextSize = 12
     Instance.new("UICorner", btn)
@@ -329,7 +329,7 @@ local function CreateToggle(parent, text, bindType, default, callback, hasColor,
     btn.MouseButton1Click:Connect(function()
         state = not state
         btn.Text = text .. (state and ": ON" or ": OFF")
-        btn.TextColor3 = state and Color3.fromRGB(255, 20, 147) or Color3.new(1,1,1)
+        btn.TextColor3 = state and Color3.fromRGB(141, 219, 255) or Color3.new(1,1,1)
         status.BackgroundColor3 = state and Color3.fromRGB(255, 255, 0) or Color3.fromRGB(255, 0, 0)
         callback(state)
     end)
@@ -338,7 +338,7 @@ local function CreateToggle(parent, text, bindType, default, callback, hasColor,
         local cp = Instance.new("TextButton", btn)
         cp.Size = UDim2.new(0, 16, 0, 16)
         cp.Position = UDim2.new(1, -90, 0.5, -8)
-        cp.BackgroundColor3 = Color3.fromRGB(255, 20, 147)
+        cp.BackgroundColor3 = Color3.fromRGB(146, 203, 255)
         cp.Text = ""
         Instance.new("UICorner", cp)
         
@@ -549,7 +549,7 @@ CreateToggle(TeleportPage, "FreeMouse TP Key", "FreeMouse", false, function(v) T
 CreateHeader(TeleportPage, "LOCATION TELEPORTS")
 for name, cf in pairs(locations) do
     local btn = Instance.new("TextButton", TeleportPage)
-    btn.Size = UDim2.new(0.95, 0, 0, 35); btn.Text = name; btn.BackgroundColor3 = Color3.fromRGB(25, 25, 25); btn.TextColor3 = Color3.fromRGB(255, 105, 180); Instance.new("UICorner", btn)
+    btn.Size = UDim2.new(0.95, 0, 0, 35); btn.Text = name; btn.BackgroundColor3 = Color3.fromRGB(25, 25, 25); btn.TextColor3 = Color3.fromRGB(162, 208, 255); Instance.new("UICorner", btn)
     btn.MouseButton1Click:Connect(function() if LocalPlayer.Character then LocalPlayer.Character:PivotTo(cf + Vector3.new(0, 0.5, 0)) end end)
 end
 
